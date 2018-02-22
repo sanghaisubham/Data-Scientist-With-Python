@@ -1,2 +1,3 @@
 # Data-Scientist-With-Python
-Becoming a Data Scientist with Python from Scratch with Basic Python to Supervised And Unsupervised Learning
+
+This project contains some good resources like Python Notebooks and Slides to become a Data Scientist with Python from Scratch with Basic Python to Supervised, Unsupervised Learning and Neural Networks
