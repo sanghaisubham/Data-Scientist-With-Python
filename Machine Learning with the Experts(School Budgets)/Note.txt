@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+First Extract the Training Data from the Folder (Training_Data.csv)
+<<<<<<< HEAD
+,
+Predictions from Predictions Folder(predictions.csv)
+&
+HoldOut from HOldOut Folder(HoldOut.csv)
+
+=======
+First Extract the Training Data from the Folder (Training_Data.csv)
+>>>>>>> parent of ace6ebf... Updated Courses
+=======
+and
+Predictions from Predictions Folder(predictions.csv)
+>>>>>>> parent of 170c11a... Updated Courses
