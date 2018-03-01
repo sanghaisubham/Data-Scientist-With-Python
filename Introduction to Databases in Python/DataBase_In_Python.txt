@@ -1,0 +1,38 @@
+Introduction to Database
+
+The Structure of Table in Relational Databases along with how they can be related is called the Relational Model.Tables,Columns,Rows and Relationships are all part of the relational model.
+
+Connecting to Database
+
+SQLAlchemy allows to generate SQL queries by writing Python Code.Two main Pieces:
+
+a)Core(Relational Model Focused)
+b)ORM(User Relational Focused):Focuses on Data Model and Classes that we programmer create.
+
+Types of Database:
+
+a)SQLite
+b)Postgre SQL
+c)MySQL
+d)MS SQL
+e)Oracle
+
+SQLAlchemy provides way to operate accross all this database type in a consistent manner.
+
+Engine: Common interface to the database from SQLAlchemy which provides a way to interact or talk to it.
+Connection String:All details required to find the database (login if necessary).DatabaseDriver+Dialect(filename) 
+
+from sqlalchemy import create_engine
+engine=create_engine(connection string needed to connect to the database)
+connection=engine.connect()
+print(engine.table_names())//Prints the table name 
+
+Reflection
+
+Reads database and builds SQLAlchemy Table Objects.
+
+from sqlalchemy import Metadata,Table 
+// Metadata object is a catalog that stores database info such as tables so that we dont have to keep looking them up
+metadata=Metadata()
+census=Table(tablename,metadata,autoload=True,autoload_with=engine)
+print(repr(census))
